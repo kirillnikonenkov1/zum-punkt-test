@@ -1,0 +1,23 @@
+@import "mixins";
+
+@include font-face("Roboto", "/assets/fonts/Roboto/robotoregular");
+@include font-face("Roboto", "/assets/fonts/Roboto/robotobold", bold);
+@include font-face("Roboto", "/assets/fonts/Roboto/robotolight", 300);
+@include font-face("Roboto", "/assets/fonts/Roboto/robotomedium", 500);
+@include font-face("Roboto", "/assets/fonts/Roboto/robotothin", 200);
+
+// 2. Example with mixin (example):
+// NOTE: do NOT use expansion (.woff, .svg etc) for path! Path will be '/assets/fonts/OpenSans/opensans';
+// NOTE-2: files required: `.woff, .woffs` (by default) OR `eot. .woff, .woffs, .svg, .ttf` if you use another mixin;
+
+// Base OpenSans:
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensans");
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensanslight", 300);
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensanssemibold", 600);
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansbold", bold);
+
+// Italic OpenSans:
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansItalic", 400, italic);
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansLightItalic", 300, italic);
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansSemiBoldItalic", 600, italic);
+// @include font-face("OpenSans", "/assets/fonts/OpenSans/opensansBoldItalic", bold, italic);

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Webpack Template</title>
+  </head>
+  <body>
+    <main id="app">
+      <example-component inline-template>
+        <section class="slider">
+          <div class="slider__container">
+            <header class="slider__header">
+              <h1 class="slider__title">Успехи за {{ this.slideData.year.currentYear }} год</h1>
+              <nav class="slider__nav">
+                <slider-year :info="this.slideData" />
+              </nav>
+            </header>
+            <slider :slider-info="this.slideData.content[this.slideData.year.currentYear]"></slider>
+            <div class="slider__pagination pagination">
+              <ul class="pagination__list">
+                <li class="pagination__item pagination__item--active"></li>
+                <li class="pagination__item"></li>
+                <li class="pagination__item"></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </example-component>
+    </main>
+  </body>
+</html>
